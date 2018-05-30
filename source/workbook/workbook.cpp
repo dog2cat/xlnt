@@ -1587,7 +1587,7 @@ void workbook::reorder_relationships()
             old_rel_id = title_rel_id_map.at(title);
             d_->sheet_title_rel_id_map_[title] = rel_id;
         } else {
-            old_rel_id = "rId" + std::to_string(index - titles.size() + 2);
+            old_rel_id = "rId" + std::to_string(index);
         }
 
         auto old_rel = rel_map[old_rel_id];
